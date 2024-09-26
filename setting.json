@@ -1,0 +1,24 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "cr756_TestVariable",
+      "Value": "Test",
+      "DefaultValue": "Test_Prod",
+      "Name": {
+        "Default": "TestVariable",
+        "ByLcid": {
+          "1033": "TestVariable"
+        }
+      },
+      "TypeId": 100000000,
+      "IsRequired": false
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "cr756_Sharepoint",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+    }
+  ]
+}
