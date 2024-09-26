@@ -1,0 +1,23 @@
+name: Pack githubtestsolution
+on:
+  push:
+    paths:
+      - contents/**
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: Desktop-LocalHost
+steps:
+      - uses: actions/checkout@v2
+- uses: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-file: out/githubtestsolution.zip
+          solution-folder: contents
+          solution-type: Both
+- uses: actions/upload-artifact@v2
+        with:
+          name: packed-solution
+          path: out/
+git add .
+git commit -m "created pack-solution.yml"
+git push
