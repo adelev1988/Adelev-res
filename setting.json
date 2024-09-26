@@ -2,7 +2,7 @@
   "EnvironmentVariables": [
     {
       "SchemaName": "cr756_TestVariable",
-      "Value": "Test",
+      "Value": "Test123",
       "DefaultValue": "Test_Prod",
       "Name": {
         "Default": "TestVariable",
