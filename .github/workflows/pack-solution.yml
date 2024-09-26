@@ -1,4 +1,4 @@
-name: Pack githubtestsolution
+name: pack-solution
 on:
   push:
     paths:
@@ -18,6 +18,3 @@ steps:
         with:
           name: packed-solution
           path: out/
-git add .
-git commit -m "created pack-solution.yml"
-git push
