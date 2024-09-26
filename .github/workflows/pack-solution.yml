@@ -1,4 +1,4 @@
-name: Pack pack-solution
+name: Pack githubtestsolution
 
 on:
   push:
@@ -10,10 +10,10 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
-          solution-file: out/contoso_university_core.zip
+          solution-file: out/githubtestsolution.zip
           solution-folder: contents
           solution-type: Both
       - uses: actions/upload-artifact@v3
