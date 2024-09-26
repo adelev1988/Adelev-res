@@ -3,7 +3,7 @@ name: Pack githubtestsolution
 on:
   push:
     paths:
-      - Other/**
+      -/**
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
       - uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
           solution-file: out/githubtestsolution.zip
-          solution-folder:
+          solution-folder: Other
           solution-type: Both
       - uses: actions/upload-artifact@v3
         with:
