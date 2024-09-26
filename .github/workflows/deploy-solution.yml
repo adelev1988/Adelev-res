@@ -11,7 +11,7 @@ on:
 jobs:
   deploy:
     runs-on: windows-latest
-    environment: production
+    environment: Test
     steps:
       - uses: dawidd6/action-download-artifact@v3
         with:
