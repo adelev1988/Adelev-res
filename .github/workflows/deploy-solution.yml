@@ -20,5 +20,8 @@ jobs:
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
           environment-url: https://org09835e11.crm.dynamics.com
-          user-name: ${{ secrets.TESTENV }}
+          user-name: TESTENV
+          app-id:  e18d5d2a-26f6-4a2c-b24e-a9631a7b96f1
+          client-secret: 9.r8Q~SZ-.v2qSFiDuBauPCho3jvcVTZk4B.8a6m
+          tenant-id: 817a3ad3-0cc9-43e1-acbd-70706f0d7c10
           solution-file: githubtestsolution_managed.zip
